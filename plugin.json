@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "filespin",
+  "version": "0.1.1",
+  "description": "FileSpin for coding agents: the FileSpin MCP server (developer docs, API reference and your account's assets) plus the filespin-developer skill",
+  "author": {
+    "name": "FileSpin",
+    "url": "https://filespin.io"
+  },
+  "homepage": "https://developers.filespin.io/api-reference/tools/mcp-server/",
+  "repository": "https://github.com/FileSpin-io/filespin-agent-plugin",
+  "license": "MIT",
+  "keywords": ["filespin", "dam", "digital-asset-management", "image-cdn", "video", "api", "mcp"]
+}

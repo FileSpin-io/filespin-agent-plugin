@@ -1,0 +1,10 @@
+name: Suggestion
+description: Suggest a change to the plugin or the skill.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you like to change, and why?
+    validations:
+      required: true

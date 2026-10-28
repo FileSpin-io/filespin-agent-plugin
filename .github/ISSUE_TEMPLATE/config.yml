@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security issue
+    url: https://github.com/FileSpin-io/filespin-agent-plugin/blob/main/SECURITY.md
+    about: Please report security issues privately by email, not as an issue.
+  - name: Account or billing questions
+    url: https://github.com/FileSpin-io/filespin-agent-plugin/blob/main/CONTRIBUTING.md
+    about: Email support@filespin.io for questions about your FileSpin account.

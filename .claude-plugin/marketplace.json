@@ -1,0 +1,17 @@
+{
+  "name": "filespin",
+  "owner": {
+    "name": "FileSpin",
+    "url": "https://filespin.io"
+  },
+  "metadata": {
+    "description": "FileSpin for coding agents: the FileSpin MCP server and the filespin-developer skill"
+  },
+  "plugins": [
+    {
+      "name": "filespin",
+      "source": "./",
+      "description": "FileSpin MCP server + the filespin-developer skill for building with the FileSpin API"
+    }
+  ]
+}

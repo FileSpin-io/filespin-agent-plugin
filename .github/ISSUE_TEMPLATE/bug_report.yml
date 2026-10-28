@@ -1,0 +1,32 @@
+name: Bug report
+description: The plugin, the MCP server connection or the skill isn't working as expected.
+labels: [bug]
+body:
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent
+      options:
+        - Claude Code
+        - Codex
+        - Cursor
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Agent version and plugin version
+      placeholder: "Claude Code 2.1.0, plugin 0.1.1"
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you asked or did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: docs
+    attributes:
+      label: Docs page with the right answer (optional)
+      placeholder: https://developers.filespin.io/...
