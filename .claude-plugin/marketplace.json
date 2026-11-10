@@ -5,13 +5,13 @@
     "url": "https://filespin.io"
   },
   "metadata": {
-    "description": "FileSpin for coding agents: the FileSpin MCP server and the filespin-developer skill"
+    "description": "FileSpin for coding agents: the FileSpin MCP server and the filespin-developer and filespin skills"
   },
   "plugins": [
     {
       "name": "filespin",
       "source": "./",
-      "description": "FileSpin MCP server + the filespin-developer skill for building with the FileSpin API"
+      "description": "FileSpin MCP server + skills for building with the FileSpin API and working with your media library"
     }
   ]
 }

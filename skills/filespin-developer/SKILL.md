@@ -65,7 +65,7 @@ https://developers.filespin.io/llms-full.txt has them all.
 ## How-to questions: answer with the API, not the action tools
 
 The same MCP server also has action tools that work on the user's account
-(for example `create_video_clip`, `upload_asset`, `update_metadata`). Those
+(for example `create_video_clip`, `import_from_url`, `update_metadata`). Those
 are for doing something in the account when the user asks you to. They are not the answer to "how do I…" questions.
 
 When the user asks how to do something with FileSpin, answer with the
