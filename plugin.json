@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "filespin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "FileSpin for coding agents: the FileSpin MCP server (developer docs, API reference and your account's assets) plus the filespin-developer and filespin skills",
   "author": {
     "name": "FileSpin",
@@ -10,5 +10,41 @@
   "homepage": "https://developers.filespin.io/api-reference/tools/mcp-server/",
   "repository": "https://github.com/FileSpin-io/filespin-agent-plugin",
   "license": "MIT",
-  "keywords": ["filespin", "dam", "digital-asset-management", "image-cdn", "video", "api", "mcp"]
+  "keywords": ["filespin", "dam", "digital-asset-management", "image-cdn", "video", "api", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FileSpin",
+        "shortDescription": "Find, edit and share media",
+        "longDescription": "FileSpin is a digital asset management (DAM) platform for images, videos and documents. Connect it to work on your FileSpin library in plain language.\n\n- Find assets by keyword, metadata, date, auto-tags or face, and see thumbnails.\n- Save files to FileSpin from a link or from your computer, with names, tags, metadata and collections.\n- Prepare outputs: social sizes, formats, watermarks, background removal, upscaling, generative fill and video renditions.\n- Create branded share pages for review, track approvals and notify teammates.\n- Look up FileSpin's developer docs and API reference while you build.\n\nYou sign in with your FileSpin account, and every action runs with your own permissions. FileSpin never deletes files from chat: deleting stays in the FileSpin dashboard.",
+        "developerName": "FileSpin",
+        "category": "Productivity",
+        "capabilities": [
+          "Search images, videos and documents",
+          "Save files from links or your computer",
+          "Edit metadata, tags and collections",
+          "Resize, convert, watermark and AI-edit images",
+          "Transcode and clip videos",
+          "Create share pages and track approvals",
+          "Search FileSpin developer docs"
+        ],
+        "websiteURL": "https://filespin.io",
+        "supportURL": "https://github.com/FileSpin-io/filespin-agent-plugin/issues",
+        "privacyPolicyURL": "https://filespin.io/privacy",
+        "termsOfServiceURL": "https://filespin.io/terms-conditions",
+        "defaultPrompt": [
+          "Find our latest product photos in FileSpin",
+          "Make Instagram and LinkedIn sizes of this image",
+          "Create a review link for the spring campaign assets"
+        ],
+        "brandColor": "#2F4BE6",
+        "brandColorDark": "#7D93FF",
+        "logo": "./assets/logo.png",
+        "composerIcon": "./assets/logo.png"
+      },
+      "publication": {
+        "release_notes": "First release in the ChatGPT plugin directory: the hosted FileSpin MCP server plus the filespin and filespin-developer skills."
+      }
+    }
+  }
 }

@@ -3,7 +3,17 @@
   "mcpServers": {
     "filespin": {
       "type": "streamable-http",
-      "url": "https://mcp.filespin.io/mcp"
+      "url": "https://mcp.filespin.io/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
     }
   }
 }

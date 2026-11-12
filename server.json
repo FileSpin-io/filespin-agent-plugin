@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.filespin/filespin",
+  "title": "FileSpin",
+  "description": "Search, upload, edit, transform and share images, videos and documents in FileSpin DAM.",
+  "version": "0.3.1",
+  "websiteUrl": "https://developers.filespin.io/api-reference/tools/mcp-server/",
+  "repository": {
+    "url": "https://github.com/FileSpin-io/filespin-agent-plugin",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://framerusercontent.com/images/2MFtIMkblkNb0WlJ4Jf7u3jgMv0.png",
+      "sizes": ["180x180"],
+      "mimeType": "image/png"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.filespin.io/mcp"
+    }
+  ]
+}

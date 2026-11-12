@@ -3,6 +3,11 @@
 All notable changes to the FileSpin plugin are listed here. Versions follow
 [Semantic Versioning](https://semver.org/).
 
+## 0.3.1 - 2026-11-12
+
+- Listing details and icon for the ChatGPT plugin directory. Nothing changes
+  for Claude Code, Codex or Cursor.
+
 ## 0.3.0 - 2026-11-09
 
 - New `filespin` skill for working with your media library from your agent:
