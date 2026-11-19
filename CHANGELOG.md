@@ -3,6 +3,31 @@
 All notable changes to the FileSpin plugin are listed here. Versions follow
 [Semantic Versioning](https://semver.org/).
 
+## 0.4.0 - 2026-11-18
+
+- Uploads from your computer are quicker and more reliable: your agent gets
+  one script for the whole batch and runs it. There are no sizes or checksums
+  to work out and no step to finish each file, so a folder takes one command
+  instead of several per file. Each file goes straight to your FileSpin
+  storage, without the redirect that made some curl versions stall; if the
+  storage address can't be reached, the script sends that file through
+  FileSpin's upload server instead. Running it again doesn't upload a file
+  twice.
+- Your agent fills in your metadata as it uploads, even when you only ask
+  it to "upload this folder": it reads your default upload schema and fills
+  the fields it has evidence for (folder and file names, documents next to the
+  files, what you told it), then shows you what it set and offers to change
+  it. It never guesses, and asks first only when a value would be a guess or
+  a required field can't be filled. Values that don't fit the schema don't
+  stop the upload; the agent is told so it can fix them.
+- If your agent's environment can't reach FileSpin, it says so and offers an
+  upload page instead of retrying.
+
+## 0.3.2 - 2026-11-14
+
+- The FileSpin MCP server no longer offers face search (`search_by_face`),
+  and the ChatGPT listing no longer mentions finding assets by face.
+
 ## 0.3.1 - 2026-11-12
 
 - Listing details and icon for the ChatGPT plugin directory. Nothing changes

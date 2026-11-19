@@ -73,8 +73,8 @@ Where the file is decides how it gets there:
 | Something you made (a report, a CSV) | Write it to a file, then upload that file. |
 | A file that belongs with an asset already in FileSpin (captions or a transcript for a video, a cut made in another tool, a print file) | Add it to that asset as a format. See "Keep files with an asset" below. |
 
-If an upload fails because your environment can't reach the storage address,
-switch to the upload page and say why.
+If an upload fails because your environment can't reach FileSpin's upload
+server, switch to the upload page and say why.
 
 Then organise what was saved:
 
