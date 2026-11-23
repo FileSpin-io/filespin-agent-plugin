@@ -3,6 +3,18 @@
 All notable changes to the FileSpin plugin are listed here. Versions follow
 [Semantic Versioning](https://semver.org/).
 
+## 0.5.0 - 2026-11-23
+
+- The `filespin` and `filespin-developer` skills are now also served by the
+  FileSpin MCP server itself (the `get_guide` tool), so chat apps that only
+  connect the server get the same guidance. You no longer need to upload the
+  skill to Claude or ChatGPT.
+- The `filespin` skill covers more: finding duplicates, changing metadata
+  safely, shares versus collections, which links are public, Adobe files, and
+  a new reference, `references/bulk-changes.md`, for jobs across many assets.
+- Your agent shows you a plan and waits for your OK before any change to your
+  assets, not only large ones.
+
 ## 0.4.0 - 2026-11-18
 
 - Uploads from your computer are quicker and more reliable: your agent gets

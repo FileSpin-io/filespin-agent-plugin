@@ -67,9 +67,18 @@ Cursor reads this repository as an [Agent Plugin](https://agent-plugins.org)
 Cursor Marketplace, connect the MCP server from the
 [MCP server setup page](https://developers.filespin.io/api-reference/tools/mcp-server/).
 
-### Install the skill without the plugin
+### Chat apps (Claude, ChatGPT, Le Chat and others)
 
-Chat apps don't install plugins, but some accept skills. Every
+Connect the MCP server, `https://mcp.filespin.io/mcp`: the address is all you
+need. The server gives your assistant the same skills this plugin installs
+(its `get_guide` tool), so there's nothing to upload. See the
+[MCP server setup page](https://developers.filespin.io/api-reference/tools/mcp-server/)
+for each app.
+
+### Install the skill without the plugin (optional)
+
+You don't need this: the MCP server serves the skill. Install it only if you
+want it available locally as well. Every
 [release](https://github.com/FileSpin-io/filespin-agent-plugin/releases/latest)
 attaches the `filespin` skill as one file:
 
@@ -98,9 +107,9 @@ new session:
 unzip filespin.zip -d ~/.agents/skills/
 ```
 
-The `filespin-developer` skill comes with the plugin only. It's for writing
-code against the FileSpin API, so install the plugin in your coding agent to
-get it.
+The `filespin-developer` skill is for writing code against the FileSpin API.
+Install the plugin in your coding agent to get it; the MCP server also serves
+it to any client.
 
 ### Any other MCP client
 
